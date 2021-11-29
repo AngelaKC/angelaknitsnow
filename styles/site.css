@@ -11,35 +11,19 @@ body {
   margin: 0;
   padding: 0;
 }
-header div {
-  display: grid;
-  grid-template-columns: 200px 50px;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "nav nav"
-    "logo header";
-}
 header h1 {
   background-color: var(--main-color);
-  color: white;
+  color: var(--text-color);
   font-variant: small-caps;
-  padding: o;
+  padding: 1rem;
   margin: 0;
   text-align: center;
+  font-size: 3rem;
 }
-header img {
-  height: 200px;
-  width: 200px;
-  margin-left: 0.5rem;
-  margin-top: 0;
-  grid-area: logo;
-}
-
 header nav ul {
   list-style: none;
   padding: 0;
   margin-top: 0;
-  grid-area: nav;
 }
 header nav ul li a:link,
 header nav ul li a:visited,
@@ -60,6 +44,18 @@ header nav ul li a:active {
   color: var(--main-color);
   border-bottom-color: var(--main-color);
 }
+div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+article {
+  width: 23%;
+  border: thin solid black;
+  padding: 0 0.3rem;
+  margin: 0.18rem;
+}
 
 /* styles for small screen */
 
@@ -67,7 +63,7 @@ header nav {
   background-image: url(../images/x-menu.svg);
   background-repeat: no-repeat;
   padding-top: 40px;
-  background-color: var(--nav-bg-color);
+  background-color: var(--main-color);
 }
 
 header nav.collapsed {
@@ -81,6 +77,10 @@ header nav.collapsed ul {
 
 /* see https://developer.mozilla.org/en-US/docs/Web/CSS/@media */
 @media screen and (min-width: 40em) {
+  header h1{
+    font-size: 6rem;
+    padding: 3rem;
+  }
   header nav {
     padding-top: 0;
   }
@@ -92,7 +92,7 @@ header nav.collapsed ul {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 10em;
-    background-color: var(--nav-bg-color);
+    background-color: var(--main-color);
     text-align: center;
   }
   header nav.collapsed {
