@@ -11,11 +11,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="scripts/projectData.js"></script>
+    <script src="scripts/templates.js"></script>
+    <script src="scripts/navigation.js"> </script>
 
     <link rel="stylesheet" href="styles/site.css" />
-    <script src="scripts/navigation.js"></script>
-  </head>
+    <script src="scripts/projectData.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        renderTemplate();
+      });
+    </script>  </head>
   <body>
     <header>
       <h1>Angela Knits Now</h1>
@@ -34,40 +39,16 @@
       </nav>
     </header>
     <main>
-      <div>
-        <article>
-          <h2>Murcia One</h2>
-          <img src="images/thumb/MurciaShawl_thumb.jpeg" />
-        </article>
-        <article>
-          <h2>Murcia Two</h2>
-          <img src="images/thumb/MurciaShawl_thumb.jpeg" />
-        </article>
-        <article>
-          <h2>Murcia Three</h2>
-          <img src="images/thumb/MurciaShawl_thumb.jpeg" />
-        </article>
-        <article>
-          <h2>Murcia Four</h2>
-          <img src="images/thumb/MurciaShawl_thumb.jpeg" />
-        </article>
-        <article>
-          <h2>Murcia Five</h2>
-          <img src="images/thumb/MurciaShawl_thumb.jpeg" />
-        </article>
-        <article>
-          <h2>Murcia Six</h2>
-          <img src="images/thumb/MurciaShawl_thumb.jpeg" />
-        </article>
-        <article>
-          <h2>Murcia Seven</h2>
-          <img src="images/thumb/MurciaShawl_thumb.jpeg" />
-        </article>
-        <article>
-          <h2>Murcia Eight</h2>
-          <img src="images/thumb/MurciaShawl_thumb.jpeg" />
-        </article>
-      </div>
+        <div id="projects">
+            <template id="project-template">
+              {{#each projects}}
+              <article>
+                <h2>{{ title }}</h2>
+                <img src="{{image_thumb}}" />
+              </article>
+              {{/each}}
+            </template>
+          </div>
     </main>
     <footer></footer>
   </body>
