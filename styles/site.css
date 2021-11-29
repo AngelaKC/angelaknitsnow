@@ -51,10 +51,19 @@ div{
   gap: 10px;
 }
 article {
-  width: 23%;
+  width: 32%;
   border: thin solid black;
   padding: 0 0.3rem;
   margin: 0.18rem;
+}
+footer{
+  padding: 3rem;
+  background-color: var(--main-color);
+
+}
+footer p{
+ text-align: center;
+ color:var(--text-color)
 }
 
 /* styles for small screen */
