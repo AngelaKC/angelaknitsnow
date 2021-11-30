@@ -12,7 +12,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="scripts/templates.js"></script>
-    <script src="scripts/navigation.js"> </script>
+    <script src="scripts/navigation.js"></script>
 
     <link rel="stylesheet" href="styles/site.css" />
     <script src="scripts/projectData.js"></script>
@@ -20,7 +20,8 @@
       window.addEventListener("DOMContentLoaded", function () {
         renderTemplate();
       });
-    </script>  </head>
+    </script>
+  </head>
   <body>
     <header>
       <h1>Angela Knits Now</h1>
@@ -39,19 +40,23 @@
       </nav>
     </header>
     <main>
-        <div id="projects">
-            <template id="project-template">
-              {{#each projects}}
-              <article>
-                <img src="{{image_thumb}}" />
-                <h2>{{ title }}</h2>
-              </article>
-              {{/each}}
-            </template>
-          </div>
+      <div id="projects">
+        <template id="project-template">
+          {{#each projects}}
+          <article>
+            <!-- <a href="{{ detail_url}}"> -->
+            <img src="{{image_thumb}}" />
+            <a href="{{ detail_url}}">
+              <h2>{{ title }}</h2>
+            </a>
+          </article>
+
+          {{/each}}
+        </template>
+      </div>
     </main>
     <footer>
-        <p>CSCI E-12 Final Project: Angela Carey Fall 2021 </p>
+      <p>CSCI E-12 Final Project: Angela Carey Fall 2021</p>
     </footer>
   </body>
 </html>
