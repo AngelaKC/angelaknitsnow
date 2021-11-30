@@ -63,6 +63,33 @@ h2{
   padding:0;
   margin:0;
 }
+.gallery{
+  border: solid medium var(--main-color);
+  margin: 0.5rem 0;
+  margin: 1rem;
+
+}
+.desc{
+  border: solid medium var(--main-color);
+  margin: 1rem;
+  display: block;
+  justify-content: left;
+  padding: 0.5rem;
+}
+.desc h2{
+  margin:0;
+  color:var(--contrast-color);
+  display:table;
+}
+.desc h3{
+  color:var(--main-color)
+}
+.desc h4{
+  color:var(--contrast-color)
+}
+span{
+  display: table;
+}
 article a:link,
 article a:visited,
 article a:hover,

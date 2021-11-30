@@ -59,7 +59,7 @@ let projectData = {
     {
       title: "Trollfjord Hat",
       ravelry_url: "https://ravel.me/angelaknitsnow/acth22",
-      detail_url: "#",
+      detail_url: "detail.html",
       image_thumb: "https://via.placeholder.com/300x533",
       image_full: "../images/IMG_1055.jprg",
       category: "Hat",
