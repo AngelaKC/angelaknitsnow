@@ -64,7 +64,6 @@ let projectData = {
       image_full: "../images/IMG_1055.jprg",
       category: "Hat",
       startDate: "05/22/2021",
-      detail_url: "#",
       endDate: "05/25/2021",
     },
     {
