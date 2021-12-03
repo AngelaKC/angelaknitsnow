@@ -14,6 +14,9 @@ body {
   margin: 0;
   padding: 0;
 }
+main{
+  max-width: 1280px;
+}
 header h1 {
   background-color: var(--main-color);
   color: var(--text-color);
@@ -46,12 +49,6 @@ header nav ul li a:active {
   color: var(--main-color);
   border-bottom-color: var(--main-color);
 }
-div{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 5px;
-}
 article {
   width: 300px;
   padding: 0;
@@ -63,11 +60,20 @@ h2{
   padding:0;
   margin:0;
 }
+#projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 5px; 
+}
 .gallery{
-  border: solid medium var(--main-color);
-  margin: 0.5rem 0;
-  margin: 1rem;
-
+  /* border: solid medium var(--main-color); */
+  margin: 1rem 0;
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 5px; 
 }
 .desc{
   border: solid medium var(--main-color);
