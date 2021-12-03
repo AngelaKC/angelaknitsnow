@@ -4,18 +4,15 @@
   --focus-color: #618b4a; /* light green*/
   --border-color: #40531b; /*dark green*/
   --contrast-color: #517664;
-  
+
   /*#517664  #297373  blue*/
-  --text-color: #F9F9ED;
+  --text-color: #f9f9ed;
 }
 body {
   background: var(--text-color);
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-}
-main{
-  max-width: 1280px;
 }
 header h1 {
   background-color: var(--main-color);
@@ -49,58 +46,61 @@ header nav ul li a:active {
   color: var(--main-color);
   border-bottom-color: var(--main-color);
 }
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+}
 article {
   width: 300px;
   padding: 0;
   margin: 0 0 0.5rem 0;
-  border: solid medium var(--main-color);
-}
-h2{
+  border: solid medium var(--main-color);}
+h2 {
   text-align: center;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
-#projects{
+#projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 5px; 
+  gap: 5px;
 }
-.gallery{
+.gallery {
   /* border: solid medium var(--main-color); */
   margin: 1rem 0;
   padding: 0.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 5px; 
+  gap: 5px;
 }
-.desc{
+.desc {
   border: solid medium var(--main-color);
   margin: 1rem;
   display: block;
   justify-content: left;
   padding: 0.5rem;
 }
-.desc h2{
-  margin:0;
-  color:var(--contrast-color);
-  display:table;
+.desc h2 {
+  margin: 0;
+  color: var(--contrast-color);
+  display: table;
 }
-.desc h3{
-  color:var(--main-color)
+.desc h3 {
+  color: var(--main-color);
 }
-.desc h4{
-  color:var(--contrast-color)
+.desc h4 {
+  color: var(--contrast-color);
 }
-span{
+span {
   display: table;
 }
 article a:link,
 article a:visited,
 article a:hover,
-article a:active{
-  background-color:var(--main-color);
+article a:active {
+  background-color: var(--main-color);
   color: var(--text-color);
   font-weight: bold;
   display: block;
@@ -109,18 +109,19 @@ article a:active{
   border-bottom: 2px solid transparent;
 }
 article a:hover,
-article a:active{
+article a:active {
   background-color: var(--text-color);
   color: var(--main-color);
   border-bottom-color: var(--main-color);
 }
-footer{
+footer {
   padding: 2rem;
   background-color: #222;
+  margin-top: 1rem;
 }
-footer p{
- text-align: center;
- color:var(--text-color)
+footer p {
+  text-align: center;
+  color: var(--text-color);
 }
 
 /* styles for small screen */
@@ -143,7 +144,7 @@ header nav.collapsed ul {
 
 /* see https://developer.mozilla.org/en-US/docs/Web/CSS/@media */
 @media screen and (min-width: 40em) {
-  header h1{
+  header h1 {
     font-size: 6rem;
     padding: 3rem;
   }
