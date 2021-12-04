@@ -5,3 +5,12 @@ function renderTemplate() {
   let testCourseHtml = template(projectDataObject);
   document.getElementById("projects").innerHTML = testCourseHtml;
 }
+// https://handlebarsjs.com/guide/block-helpers.html#conditionals
+
+Handlebars.registerHelper("if_eq", function (category, value, options) {
+  if (category == value) {
+      return options.fn(this);
+  } else {
+      return options.inverse(this);
+  }
+});
