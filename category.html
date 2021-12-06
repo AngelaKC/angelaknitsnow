@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AKN: Hats</title>
+    <title>AKN: Cowls/Shawls</title>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
       integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
@@ -34,10 +34,10 @@
             <a href="#">Blankets</a>
           </li>
             <li>
-            <a href="#">Cowls/Shawls</a>
+            <a href="category.html">Cowls/Shawls</a>
           </li>
           <li>
-            <a href="category.html"">Hats</a>
+            <a href="#">Hats</a>
           </li>
           <li>
             <a href="#">Mittens</a>
@@ -52,9 +52,8 @@
       <div id="projects">
         <template id="project-template">
             {{#each projects}}
-              {{#if_eq category 'Hat'}}
+              {{#if_eq category 'cowl/shawl'}}
               <article>
-                  <!-- <a href="{{ detail_url}}"> -->
                   <img src="{{image_thumb}}" />
                   <a href="{{ detail_url}}">
                       <h2>{{ title }}</h2>
