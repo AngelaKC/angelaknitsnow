@@ -64,5 +64,13 @@ let projectData = {
       category: "mittens",
       alt_text: "Knitted lace cowl"
     },
+    {
+      title: "Trollfjord Hat",
+      detail_url: "#",
+      image_thumb: "../images/trollfjordHat_300x400.jpg",
+      image_full: "#",
+      category: "hat",
+      alt_text: "Knitted hat with "
+    },
   ],
 };
