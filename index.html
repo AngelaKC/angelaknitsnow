@@ -22,7 +22,7 @@
       });
     </script>
   </head>
-  <body>
+  <body id="home">
     <header>
       <h1>Angela Knits Now</h1>
       <nav>
@@ -53,7 +53,7 @@
         <template id="project-template">
           {{#each projects}}
           <article>
-            <img src="{{image_thumb}}" />
+            <img src="{{image_thumb}}" alt="{{ alt_text}}" />
             <a href="{{ detail_url}}">
               <h2>{{ title }}</h2>
             </a>

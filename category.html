@@ -22,7 +22,7 @@
       });
     </script>
   </head>
-  <body>
+  <body id="category">
     <header>
       <h1>Angela Knits Now</h1>
       <nav>
@@ -49,14 +49,15 @@
       </nav>
     </header>
     <main>
+      <h2>Cowls/Shawls</h2>
       <div id="projects">
         <template id="project-template">
             {{#each projects}}
               {{#if_eq category 'cowl/shawl'}}
               <article>
-                  <img src="{{image_thumb}}" />
+                  <img src="{{image_thumb}}" alt="{{alt_text }}"/>
                   <a href="{{ detail_url}}">
-                      <h2>{{ title }}</h2>
+                      <h3>{{ title }}</h3>
                   </a>
               </article>
               {{/if_eq}}

@@ -62,7 +62,7 @@ let projectData = {
       image_thumb: "../images/nordicMitts_300x400.jpg",
       image_full: "#",
       category: "mittens",
-      alt_text: "Knitted lace cowl"
+      alt_text: "Purple knitted mittens"
     },
     {
       title: "Trollfjord Hat",
@@ -70,7 +70,7 @@ let projectData = {
       image_thumb: "../images/trollfjordHat_300x400.jpg",
       image_full: "#",
       category: "hat",
-      alt_text: "Knitted hat with "
+      alt_text: "Knitted hat with fair isle colorwork"
     },
   ],
 };

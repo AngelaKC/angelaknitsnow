@@ -54,10 +54,24 @@ article {
   width: 300px;
   padding: 0;
   margin: 0 0 0.5rem 0;
-  border: solid medium var(--main-color);}
-h2 {
+  border: solid 1px var(--main-color);}
+img{
+  padding:0;
+  margin:0;
+}
+  h2 {
   text-align: center;
   padding: 0;
+  margin: 0;
+}
+#category h2{
+  text-align:left;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+#category h3{
+  text-align: center;
+  padding:0;
   margin: 0;
 }
 #projects {
