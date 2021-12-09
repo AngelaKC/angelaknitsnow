@@ -9,8 +9,8 @@ function renderTemplate() {
 
 Handlebars.registerHelper("if_eq", function (category, value, options) {
   if (category == value) {
-      return options.fn(this);
+    return options.fn(this);
   } else {
-      return options.inverse(this);
+    return options.inverse(this);
   }
 });

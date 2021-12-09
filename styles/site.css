@@ -1,11 +1,6 @@
 :root {
   --main-color: #3b2b44; /* Purple */
-  --light-color: #9a8c98; /* light purple */
-  --focus-color: #618b4a; /* light green*/
-  --border-color: #40531b; /*dark green*/
   --contrast-color: #517664;
-
-  /*#517664  #297373  blue*/
   --text-color: #f9f9ed;
 }
 body {
@@ -41,7 +36,7 @@ header nav ul li a:hover {
 }
 header nav ul li a:hover,
 header nav ul li a:active,
-header nav ul li a.current{
+header nav ul li a.current {
   background-color: var(--text-color);
   color: var(--contrast-color);
   border-bottom-color: var(--contrast-color);
