@@ -33,7 +33,7 @@
           <li>
             <a href="#">Blankets</a>
           </li>
-            <li>
+          <li>
             <a href="category.html">Cowls/Shawls</a>
           </li>
           <li>
@@ -52,18 +52,16 @@
       <h2>Cowls/Shawls</h2>
       <div id="projects">
         <template id="project-template">
-            {{#each projects}}
-              {{#if_eq category 'cowl/shawl'}}
-              <article>
-                  <img src="{{image_thumb}}" alt="{{alt_text }}"/>
-                  <a href="{{ detail_url}}">
-                      <h3>{{ title }}</h3>
-                  </a>
-              </article>
-              {{/if_eq}}
-            {{/each}}
+          {{#each projects}} {{#if_eq category 'cowl/shawl'}}
+          <article>
+            <img src="{{image_thumb}}" alt="{{alt_text }}" />
+            <a href="{{ detail_url}}">
+              <h3>{{ title }}</h3>
+            </a>
+          </article>
+          {{/if_eq}} {{/each}}
         </template>
-    </div>
+      </div>
     </main>
     <footer>
       <p>CSCI E-12 Final Project: Angela Carey Fall 2021</p>

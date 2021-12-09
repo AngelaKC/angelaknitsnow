@@ -9,6 +9,14 @@ let projectData = {
       alt_text:"Knitted Bernie Mittens in retro colors"
     },    
     {
+      title: "Buffalo Plaid",
+      detail_url: "#",
+      image_thumb: "../images/buffoloPlaid_300x400.jpg",
+      image_full: "#",
+      category: "hats",
+      alt_text:"Knitted plaid hat"
+    },  
+    {
       title: "Comfort Cowl",
       detail_url: "detail.html",
       image_thumb: "../images/comfortCowl_01_300x400.jpg",
@@ -31,6 +39,14 @@ let projectData = {
       image_full: "../images/lifesRichTapestry_01_1200x1600.jpg",
       category: "cowl/shawl",
       alt_text: "Knitted shawl in multi color yarn"
+    },
+    {
+      title: "Lyre Beanie",
+      detail_url: "#",
+      image_thumb: "../images/LyreBeanie_300x400.jpg",
+      image_full: "#",
+      category: "hat",
+      alt_text: "Gray knitted hat with fair isle colorwork"
     },
     {
       title: "Murcia Shwal",
@@ -63,6 +79,14 @@ let projectData = {
       image_full: "#",
       category: "mittens",
       alt_text: "Purple knitted mittens"
+    },
+    {
+      title: "Tied Knots Hat",
+      detail_url: "#",
+      image_thumb: "../images/tiedKnots_300x400.jpg",
+      image_full: "#",
+      category: "hat",
+      alt_text: "Knitted hat with cablework"
     },
     {
       title: "Trollfjord Hat",

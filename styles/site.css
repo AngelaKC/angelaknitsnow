@@ -30,8 +30,7 @@ header nav ul {
 }
 header nav ul li a:link,
 header nav ul li a:visited,
-header nav ul li a:hover,
-header nav ul li a:active {
+header nav ul li a:hover {
   background-color: var(--contrast-color);
   color: var(--text-color);
   font-weight: bold;
@@ -41,10 +40,10 @@ header nav ul li a:active {
   border-bottom: 2px solid transparent;
 }
 header nav ul li a:hover,
-header nav ul li a:active {
+header nav ul li a:active{
   background-color: var(--text-color);
-  color: var(--main-color);
-  border-bottom-color: var(--main-color);
+  color: var(--contrast-color);
+  border-bottom-color: var(--contrast-color);
 }
 main {
   max-width: 1280px;
@@ -54,25 +53,26 @@ article {
   width: 300px;
   padding: 0;
   margin: 0 0 0.5rem 0;
-  border: solid 1px var(--main-color);}
-img{
-  padding:0;
-  margin:0;
-  display:block;
+  border: solid 1px var(--main-color);
 }
-  h2 {
+img {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+h2 {
   text-align: center;
   padding: 0;
   margin: 0;
 }
-#category h2{
-  text-align:left;
+#category h2 {
+  text-align: left;
   font-size: 2.5rem;
   padding: 1rem 0;
 }
-#category h3{
+#category h3 {
   text-align: center;
-  padding:0;
+  padding: 0;
   margin: 0;
 }
 #projects {
