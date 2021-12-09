@@ -40,7 +40,8 @@ header nav ul li a:hover {
   border-bottom: 2px solid transparent;
 }
 header nav ul li a:hover,
-header nav ul li a:active{
+header nav ul li a:active,
+header nav ul li a.current{
   background-color: var(--text-color);
   color: var(--contrast-color);
   border-bottom-color: var(--contrast-color);
